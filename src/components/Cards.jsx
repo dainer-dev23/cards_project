@@ -2,6 +2,9 @@ import React from "react";
 import "../Cards.css";
 
 function Cards({ name, profesion, imagen }) {
+  function saludar(nombre) {
+    alert("hola " + nombre);
+  }
   return (
     <div className="card">
       <img src={imagen} alt="" className="cardImg" />
@@ -10,8 +13,8 @@ function Cards({ name, profesion, imagen }) {
         <h2>{name}</h2>
 
         <p>{profesion}</p>
-  
-        <button>Ver perfil</button>
+
+        <button onClick={()=>{saludar(name)}}> perfil </button>
       </div>
     </div>
   );
