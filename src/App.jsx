@@ -69,7 +69,6 @@ function App() {
               
             ></Cards>
 
-            <button onClick={() => saludar(personaje.nombre)}>saludar</button>
           </>
         );
       })}
